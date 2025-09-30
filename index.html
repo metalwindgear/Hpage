@@ -5,16 +5,14 @@
       <title>HOME_PAGE</title>
   </head>
   <body>
-      <select id="bg" onchange="
-          const url = this.value;
-          document.body.style.backgroundImage = url ? 'url(' + url + ')' : 'none';
-          document.body.style.backgroundSize = 'cover';
-          document.body.style.backgroundPosition = 'center';
-      ">
-          <option value="">BACKGROUNS: </option>
-          <option value="bg1.jpg">DEFAULT</option>
-          <option value="bg2.jpg">GLOBE</option>
-          <option value="bg3.jpg">DNA</option>
-    </select>
+      <button onclick="document.body.style.backgroundImage = 'url(bg1.jpg)'">
+        BG1 (DEFAULT)
+      </button>
+      <button onclick="document.body.style.backgroundImage = 'url(bg2.jpg)'">
+        BG2
+      </button>
+      <button onclick="document.body.style.backgroundImage = 'url(bg3.jpg)'">
+        BG3
+      </button>
   </body>
 </html>
