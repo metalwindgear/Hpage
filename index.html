@@ -1,20 +1,20 @@
 <DOCTYPE! html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME_PAGE</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HOME_PAGE</title>
   </head>
   <body>
-    <select id="bg" onchange="
-  const url = this.value;
-  document.body.style.backgroundImage = url ? 'url(' + url + ')' : 'none';
-  document.body.style.backgroundSize = 'cover';
-  document.body.style.backgroundPosition = 'center';
-">
-  <option value="">BACKGROUNS: </option>
-  <option value="bg1.jpg">DEFAULT</option>
-  <option value="bg2.jpg">GLOBE</option>
-  <option value="bg3.jpg">DNA</option>
+      <select id="bg" onchange="
+          const url = this.value;
+          document.body.style.backgroundImage = url ? 'url(' + url + ')' : 'none';
+          document.body.style.backgroundSize = 'cover';
+          document.body.style.backgroundPosition = 'center';
+      ">
+          <option value="">BACKGROUNS: </option>
+          <option value="bg1.jpg">DEFAULT</option>
+          <option value="bg2.jpg">GLOBE</option>
+          <option value="bg3.jpg">DNA</option>
     </select>
   </body>
 </html>
