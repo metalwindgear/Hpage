@@ -5,20 +5,16 @@
     <title>HOME_PAGE</title>
   </head>
   <body>
-    <div class="seach_engine">
-      <a href="https://duckduckgo.com">DDG</a>
-    </div>
+    <select id="bg" onchange="
+  const url = this.value;
+  document.body.style.backgroundImage = url ? 'url(' + url + ')' : 'none';
+  document.body.style.backgroundSize = 'cover';
+  document.body.style.backgroundPosition = 'center';
+">
+  <option value="">BACKGROUNS: </option>
+  <option value="bg1.jpg">DEFAULT</option>
+  <option value="bg2.jpg">GLOBE</option>
+  <option value="bg3.jpg">DNA</option>
+    </select>
   </body>
-  <style>
-    body {
-      background: url("bg.jpg");
-      repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-
-    .search-engine {
-      font-size: 20vw;
-    }
-  </style>
 </html>
